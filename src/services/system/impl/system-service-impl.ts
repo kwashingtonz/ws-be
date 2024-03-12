@@ -15,6 +15,6 @@ export class SystemServiceImpl implements SystemService {
     // throw new ValidationException(CodesRes.validationError,"Id not")
     // let a:any = {}
     // a.i.i
-    return Utility.getSuccessResponse("System is up and running",null);
+    return Utility.getSuccessResponse("System is up and running",'200');
   }
 }

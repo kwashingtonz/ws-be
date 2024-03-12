@@ -1,0 +1,48 @@
+2024-03-12 22:43:52:4352 [32minfo[39m: [32mSystem is up and running[39m
+2024-03-12 22:43:52:4352 [35mhttp[39m: [35mGET /service/system/health 200 72 - 11.810 ms[39m
+[35m[39m
+2024-03-12 22:43:52:4352 [35mhttp[39m: [35mGET /favicon.ico 404 150 - 2.294 ms[39m
+[35m[39m
+2024-03-12 22:44:09:449 [32minfo[39m: [32mSystem is up and running[39m
+2024-03-12 22:44:09:449 [35mhttp[39m: [35mGET /service/system/health 304 - - 1.655 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs 301 183 - 2.699 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs/ 200 3106 - 1.603 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs/swagger-ui-init.js 200 3635 - 0.662 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs/swagger-ui.css 200 152042 - 5.890 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs/swagger-ui-standalone-preset.js 200 230777 - 7.974 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs/swagger-ui-bundle.js 200 1403416 - 8.433 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs/favicon-16x16.png 200 665 - 1.518 ms[39m
+[35m[39m
+2024-03-12 22:44:13:4413 [35mhttp[39m: [35mGET /api-docs/favicon-32x32.png 200 628 - 3.944 ms[39m
+[35m[39m
+2024-03-12 22:44:20:4420 [32minfo[39m: [32mSystem is up and running[39m
+2024-03-12 22:44:20:4420 [35mhttp[39m: [35mGET /service/system/health 304 - - 0.720 ms[39m
+[35m[39m
+2024-03-12 22:46:49:4649 [32minfo[39m: [32mSystem is up and running[39m
+2024-03-12 22:46:49:4649 [35mhttp[39m: [35mGET /service/system/health 200 73 - 12.120 ms[39m
+[35m[39m
+2024-03-12 22:48:01:481 [35mhttp[39m: [35mGET /api-docs/ 200 3106 - 9.825 ms[39m
+[35m[39m
+2024-03-12 22:48:01:481 [35mhttp[39m: [35mGET /api-docs/swagger-ui.css 304 - - 1.795 ms[39m
+[35m[39m
+2024-03-12 22:48:01:481 [35mhttp[39m: [35mGET /api-docs/swagger-ui-bundle.js 304 - - 0.549 ms[39m
+[35m[39m
+2024-03-12 22:48:01:481 [35mhttp[39m: [35mGET /api-docs/swagger-ui-init.js 200 3637 - 0.710 ms[39m
+[35m[39m
+2024-03-12 22:48:01:481 [35mhttp[39m: [35mGET /api-docs/swagger-ui-standalone-preset.js 304 - - 0.489 ms[39m
+[35m[39m
+2024-03-12 22:48:01:481 [35mhttp[39m: [35mGET /api-docs/favicon-16x16.png 304 - - 0.623 ms[39m
+[35m[39m
+2024-03-12 22:48:08:488 [32minfo[39m: [32mSystem is up and running[39m
+2024-03-12 22:48:08:488 [35mhttp[39m: [35mGET /service/system/health 304 - - 2.073 ms[39m
+[35m[39m
+2024-03-12 22:48:25:4825 [32minfo[39m: [32mSystem is up and running[39m
+2024-03-12 22:48:25:4825 [35mhttp[39m: [35mGET /service/system/health 304 - - 1.339 ms[39m
+[35m[39m

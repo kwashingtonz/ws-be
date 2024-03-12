@@ -30,7 +30,7 @@ const router: Router = express.Router();
  *              description: Number of items in the response.
  *          example:
  *              status: true
- *              code: 200
+ *              code: '200'
  *              extra: Success
  *              count: 0
  */
