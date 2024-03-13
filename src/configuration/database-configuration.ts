@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
   username: appConfig.getUserName(),
   password: appConfig.getPassword(),
   database: appConfig.getDataBase(),
-  synchronize: false,
+  synchronize: true,
   entities: [
     // someEntity
   ],

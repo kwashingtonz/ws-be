@@ -28,8 +28,6 @@ export function NodeApplication<T extends { new(...args: any[]): {} }>(construct
   // config routes
   getRoutes(app);
 
-  const server: http.Server = http.createServer(app);
-
   // configuration read from system environment
   let appConfigurationDto: AppConfigurationsDto = readAppConfiguration();
   const port: Number = appConfigurationDto.getPort();

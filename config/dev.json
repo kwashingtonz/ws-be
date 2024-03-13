@@ -7,8 +7,8 @@
       "host": "127.0.0.1",
       "userName": "root",
       "password": "kaliya234",
-      "db": "",
-      "port": "3306"
+      "db": "webstat_be",
+      "port": "27017"
     },
     "jwtSecret": "4658sfds@6798gs",
     "apiKey":"HC0#5ylVKHSdjn#GhRK@s",
