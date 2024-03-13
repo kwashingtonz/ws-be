@@ -14,6 +14,7 @@ export class EnvironmentConfiguration {
     appConfig.setDataBase(process.env.db_name || config.get("db.db"));
     let dataBasePort: any = process.env.db_port;
     appConfig.setDataBasePort(dataBasePort || config.get("db.port"));
+    appConfig.setUrl(process.env.db_url || config.get("db.url"))
 
     appConfig.setJwtSecret(process.env.jwtSecret || config.get("jwtSecret"));
     appConfig.setApiKey(process.env.apiKey || config.get("apiKey"));

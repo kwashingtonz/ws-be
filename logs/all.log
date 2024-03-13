@@ -46,3 +46,9 @@
 2024-03-12 22:48:25:4825 [32minfo[39m: [32mSystem is up and running[39m
 2024-03-12 22:48:25:4825 [35mhttp[39m: [35mGET /service/system/health 304 - - 1.339 ms[39m
 [35m[39m
+2024-03-13 23:01:58:158 [35mhttp[39m: [35mGET /service/setup/initialSetup 200 5563 - 1057.246 ms[39m
+[35m[39m
+2024-03-13 23:03:21:321 [35mhttp[39m: [35mGET /service/setup/initialSetup 200 5563 - 725.771 ms[39m
+[35m[39m
+2024-03-13 23:07:53:753 [35mhttp[39m: [35mGET /service/setup/initialSetup 200 5563 - 561.484 ms[39m
+[35m[39m

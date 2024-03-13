@@ -10,4 +10,10 @@ export class DistrictEntity {
 
     @Column((type) => WeatherStationEntity)
     weatherStations: WeatherStationEntity[]
+
+    constructor(districtId: number, districtName: string, weatherStations: WeatherStationEntity[]) {
+        this.districtId = districtId
+        this.districtName = districtName
+        this.weatherStations = weatherStations
+    }
 }

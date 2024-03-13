@@ -2,7 +2,7 @@ import { Entity, ObjectId, ObjectIdColumn, Column } from "typeorm"
 import { DistrictEntity } from "./district-entity"
 
 @Entity()
-export class CountyEntity {
+export class CountryEntity {
     @ObjectIdColumn()
     id: ObjectId
 

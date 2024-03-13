@@ -6,12 +6,10 @@ export class AppConfigurationsDto {
   private password: string;
   private dataBase: string;
   private dataBasePort: number;
+  private url: string;
 
   private jwtSecret: string;
   private apiKey: string;
- 
-  //micro service
-  private beServicePath: string;
 
   //redis
   private redisPort:number;
@@ -73,10 +71,14 @@ export class AppConfigurationsDto {
       this.dataBasePort = dataBasePort;
   }
 
-  public getBeServicePath(): string {
-      return this.beServicePath;
+  public getUrl(): string {
+    return this.url;
+  }  
+  
+  public setUrl(url: string): void {
+      this.url = url;
   }
-
+  
   public getJwtSecret(): string {
     return this.jwtSecret;
   }
@@ -91,10 +93,6 @@ export class AppConfigurationsDto {
 
   public setApiKey(apiKey: string): void {
     this.apiKey = apiKey;
-  }
-
-  public setBeServicePath(beServicePath: string): void {
-      this.beServicePath = beServicePath;
   }
 
   public getRedisPort(): number {
