@@ -1,6 +1,9 @@
 import { DataSource } from "typeorm";
 import { EnvironmentConfiguration } from "./environment-configuration";
 import { CountryEntity } from "../entity/country-entity";
+import { DistrictEntity } from "../entity/district-entity";
+import { WeatherStationEntity } from "../entity/weather-station-entity";
+import { ReadingEntity } from "../entity/reading-entity";
 
 const environmentConfiguration = new EnvironmentConfiguration();
 const appConfig = environmentConfiguration.readAppConfiguration();
@@ -12,16 +15,20 @@ export const replaceWithPassword = (stringLink:string):string => {
 }
 
 export const AppDataSource = new DataSource({
-  type: "mongodb",
-  // host: appConfig.getHost(),
-  // port: appConfig.getDataBasePort(),
-  // username: appConfig.getUserName(),
-  // password: appConfig.getPassword(),
-  // database: appConfig.getDataBase(),
-  url: replaceWithPassword(appConfig.getUrl()),
+  // type: "mongodb",
+  type: "mysql",
+  host: appConfig.getHost(),
+  port: appConfig.getDataBasePort(),
+  username: appConfig.getUserName(),
+  password: appConfig.getPassword(),
+  database: appConfig.getDataBase(),
+  // url: replaceWithPassword(appConfig.getUrl()),
   synchronize: true,
   entities: [
-    CountryEntity
+    CountryEntity,
+    DistrictEntity,
+    WeatherStationEntity,
+    ReadingEntity
   ],
   logging: false,
   subscribers: [

@@ -13,6 +13,9 @@ import fs from "fs";
 import RedisConfiguration from "../configuration/redis-configurations";
 import swaggerUI from 'swagger-ui-express';
 import openapiSpecification from "../configuration/swagger-configuration";
+import { Server as SocketIOServer } from 'socket.io';
+
+const { setSocketInstance } = require("../support/socket-io-instance");
 
 /**
  * main application configuration
@@ -43,12 +46,18 @@ export function NodeApplication<T extends { new(...args: any[]): {} }>(construct
 
   // connect to data base
   ConnectToDatabase();
-  // start server
-  app.listen(port);
-
+  
   // swagger configure
   app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(openapiSpecification))
-
+  
+  //socketIO
+  const httpServer = http.createServer(app);
+  const io = new SocketIOServer(httpServer);
+  setSocketInstance(io);
+  
+  // start server
+  app.listen(port);
+  
   // call prototype method
   constructor.prototype.run(port);
 }

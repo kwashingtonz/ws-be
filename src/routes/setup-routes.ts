@@ -49,6 +49,8 @@ const router: Router = express.Router();
  *      summary: Initial Setup of the application db
  *      tags: [Setup]
  *      description: Initial Setup of the application db
+ *      security:
+ *          - apiKeyAuth: []
  *      responses:
  *              200:
  *                  description: Successful

@@ -1,19 +1,15 @@
-import { Entity, ObjectId, ObjectIdColumn, Column } from "typeorm"
-import { WeatherStationEntity } from "./weather-station-entity"
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
+import { CountryEntity } from "./country-entity"
 
+@Entity({ name: "districts" })
 export class DistrictEntity {
-    @Column()
-    districtId: number
+
+    @PrimaryGeneratedColumn()
+    id: number
 
     @Column()
     districtName: string
 
-    @Column((type) => WeatherStationEntity)
-    weatherStations: WeatherStationEntity[]
-
-    constructor(districtId: number, districtName: string, weatherStations: WeatherStationEntity[]) {
-        this.districtId = districtId
-        this.districtName = districtName
-        this.weatherStations = weatherStations
-    }
+    @ManyToOne(() => CountryEntity)
+    country: CountryEntity
 }

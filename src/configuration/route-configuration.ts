@@ -1,13 +1,13 @@
 var systemRoutes = require("../routes/system-routes");
 var setupRoutes = require("../routes/setup-routes");
-var readingRoutes = require("../routes/reading-routes");
+var weatherDataRoutes = require("../routes/weather-data-routes");
 
-import express, { Request, Response, Router } from "express";
+import express from "express";
 
 export class RouteConfiguration {
   configRoutes(app: express.Application) {
     app.use("/service/system", systemRoutes);
     app.use("/service/setup", setupRoutes);
-    app.use("/service/reading", readingRoutes);
+    app.use("/service/weatherData", weatherDataRoutes);
   }
 }

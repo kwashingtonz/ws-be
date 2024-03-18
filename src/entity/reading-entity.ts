@@ -1,6 +1,12 @@
-import { Column } from "typeorm"
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
+import { WeatherStationEntity } from "./weather-station-entity"
 
+@Entity({ name: "readings" })
 export class ReadingEntity {
+
+    @PrimaryGeneratedColumn()
+    id: number
+
     @Column()
     dateTime: Date
 
@@ -13,10 +19,6 @@ export class ReadingEntity {
     @Column()
     airPressure: number
 
-    constructor(dateTime: Date, temperature: number, humidity: number, airPressure: number) {
-        this.dateTime = dateTime
-        this.temperature = temperature
-        this.humidity = humidity
-        this.airPressure = airPressure
-    }
+    @ManyToOne(() => WeatherStationEntity)
+    weatherStation: WeatherStationEntity
 }

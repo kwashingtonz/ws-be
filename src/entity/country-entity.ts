@@ -1,17 +1,10 @@
-import { Entity, ObjectId, ObjectIdColumn, Column } from "typeorm"
-import { DistrictEntity } from "./district-entity"
+import { Entity, Column, PrimaryGeneratedColumn } from "typeorm"
 
-@Entity()
+@Entity({ name: "countries" })
 export class CountryEntity {
-    @ObjectIdColumn()
-    id: ObjectId
-
-    @Column()
-    countryId: number
+    @PrimaryGeneratedColumn()
+    id: number
 
     @Column()
     countryName: string
-
-    @Column((type) => DistrictEntity)
-    districts: DistrictEntity[]
 }
