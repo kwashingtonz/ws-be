@@ -9076,3 +9076,139 @@
 [35m[39m
 2024-03-19 12:05:00:50 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 24.453 ms[39m
 [35m[39m
+2024-03-19 12:11:56:1156 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 200 6102 - 72.421 ms[39m
+[35m[39m
+2024-03-19 12:13:47:1347 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 200 6102 - 48.544 ms[39m
+[35m[39m
+2024-03-19 12:13:53:1353 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 39.196 ms[39m
+[35m[39m
+2024-03-19 12:14:38:1438 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 70.114 ms[39m
+[35m[39m
+2024-03-19 12:14:38:1438 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 57.805 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 39.566 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 30.215 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 28.524 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 25.457 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 30.577 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 26.913 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 31.042 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 29.231 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 28.055 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 29.551 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 40.856 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 33.851 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 33.748 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 35.351 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 35.533 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 34.997 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 34.981 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 35.120 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 38.105 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 37.176 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 38.610 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 38.742 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 39.868 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 39.900 ms[39m
+[35m[39m
+2024-03-19 12:15:00:150 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 40.026 ms[39m
+[35m[39m
+2024-03-19 12:15:12:1512 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 200 6104 - 44.905 ms[39m
+[35m[39m
+2024-03-19 12:15:12:1512 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 200 6104 - 35.145 ms[39m
+[35m[39m
+2024-03-19 12:15:54:1554 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 80.715 ms[39m
+[35m[39m
+2024-03-19 12:15:54:1554 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 75.004 ms[39m
+[35m[39m
+2024-03-19 12:16:03:163 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 64.624 ms[39m
+[35m[39m
+2024-03-19 12:16:03:163 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 47.918 ms[39m
+[35m[39m
+2024-03-19 12:17:36:1736 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 42.648 ms[39m
+[35m[39m
+2024-03-19 12:19:12:1912 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 43.182 ms[39m
+[35m[39m
+2024-03-19 12:19:13:1913 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 38.218 ms[39m
+[35m[39m
+2024-03-19 12:19:26:1926 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 35.632 ms[39m
+[35m[39m
+2024-03-19 12:19:34:1934 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 42.044 ms[39m
+[35m[39m
+2024-03-19 12:19:41:1941 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 30.520 ms[39m
+[35m[39m
+2024-03-19 12:19:41:1941 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 304 - - 28.730 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 6.436 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 12.553 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 12.036 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 11.880 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 10.594 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 11.150 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 10.674 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 5.779 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 7.931 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 10.788 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 11.257 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 12.588 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 13.086 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 12.410 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 13.127 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 14.589 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 15.568 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 14.008 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 13.353 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 13.928 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 13.813 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 15.223 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 14.633 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 10.747 ms[39m
+[35m[39m
+2024-03-19 12:20:00:200 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 15.585 ms[39m
+[35m[39m

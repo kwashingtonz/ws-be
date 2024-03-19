@@ -1,0 +1,20 @@
+{
+    "server": {
+      "port": "9090",
+      "ip": "127.0.0.1"
+    },
+    "db": {
+      "host": "127.0.0.1",
+      "userName": "root",
+      "password": "kaliya234",
+      "db": "webstat_be",
+      "port": "3306",
+      "url":"mongodb+srv://kalinduwashington2:<password>@clusterws.ozvu6bb.mongodb.net/ws-be?retryWrites=true&w=majority&appName=ClusterWS"
+    },
+    "jwtSecret": "4658sfds@6798gs",
+    "apiKey":"HC0#5ylVKHSdjn#GhRK@s",
+    "redis": {
+      "host": "127.0.0.1",
+      "port": "6379"
+    }
+}
