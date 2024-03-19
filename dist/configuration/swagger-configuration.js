@@ -22,10 +22,16 @@ const options = {
         ],
         components: {
             securitySchemes: {
-                bearerAuth: {
-                    type: 'http',
-                    scheme: 'bearer',
-                    bearerFormat: 'JWT',
+                // bearerAuth: {
+                //   type: 'http',
+                //   scheme: 'bearer',
+                //   bearerFormat: 'JWT',
+                // }
+                apiKeyAuth: {
+                    type: 'apiKey',
+                    in: 'header',
+                    name: 'x-api-key',
+                    description: 'Default API Key HC0#5ylVKHSdjn#GhRK@s'
                 }
             }
         },

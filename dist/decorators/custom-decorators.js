@@ -39,6 +39,8 @@ const exception_middleware_1 = __importDefault(require("../middleware/exception-
 const redis_configurations_1 = __importDefault(require("../configuration/redis-configurations"));
 const swagger_ui_express_1 = __importDefault(require("swagger-ui-express"));
 const swagger_configuration_1 = __importDefault(require("../configuration/swagger-configuration"));
+const socket_io_1 = require("socket.io");
+const { setSocketInstance } = require("../support/socket-io-instance");
 /**
  * main application configuration
  * set up db , loggers , cors and etc
@@ -52,7 +54,6 @@ function NodeApplication(constructor) {
     app.use((0, cookie_parser_1.default)());
     // config routes
     getRoutes(app);
-    const server = http.createServer(app);
     // configuration read from system environment
     let appConfigurationDto = readAppConfiguration();
     const port = appConfigurationDto.getPort();
@@ -64,10 +65,19 @@ function NodeApplication(constructor) {
     redisConfiguration.redisConfig();
     // connect to data base
     (0, database_configuration_1.ConnectToDatabase)();
-    // start server
-    app.listen(port);
     // swagger configure
     app.use("/api-docs", swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(swagger_configuration_1.default));
+    //socketIO
+    const httpServer = http.createServer(app);
+    const io = new socket_io_1.Server(httpServer, {
+        cors: {
+            origin: "http://localhost:3000",
+            methods: ["GET", "POST"]
+        }
+    });
+    setSocketInstance(io);
+    // start server
+    httpServer.listen(port);
     // call prototype method
     constructor.prototype.run(port);
 }

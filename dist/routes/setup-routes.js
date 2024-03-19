@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-var systemController = require("../controllers/system-controller");
+var setupController = require("../controllers/setup-controller");
 const auth = require("../middleware/auth-middleware");
 const router = express_1.default.Router();
 // add authentication middleware
@@ -40,16 +40,18 @@ const router = express_1.default.Router();
 /**
  * @swagger
  * tags:
- *   name: SystemHealth
- *   description: System Health API
+ *   name: Setup
+ *   description: Setup API
  */
 /**
  * @swagger
- * /service/system/health:
+ * /service/setup/initialSetup:
  *    get:
- *      summary: Returns the health of the application
- *      tags: [SystemHealth]
- *      description: Returns the health of the application
+ *      summary: Initial Setup of the application db
+ *      tags: [Setup]
+ *      description: Initial Setup of the application db
+ *      security:
+ *          - apiKeyAuth: []
  *      responses:
  *              200:
  *                  description: Successful
@@ -60,5 +62,5 @@ const router = express_1.default.Router();
  *              400:
  *                  description: Not Available
 */
-router.get("/health", systemController.getSystemHealth);
+router.get("/initialSetup", setupController.initalSetup);
 module.exports = router;

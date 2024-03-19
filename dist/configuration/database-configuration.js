@@ -9,21 +9,36 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ConnectToTestDatabase = exports.ConnectToDatabase = exports.AppDataSource = void 0;
+exports.ConnectToDatabase = exports.AppDataSource = exports.replaceWithPassword = void 0;
 const typeorm_1 = require("typeorm");
 const environment_configuration_1 = require("./environment-configuration");
+const country_entity_1 = require("../entity/country-entity");
+const district_entity_1 = require("../entity/district-entity");
+const weather_station_entity_1 = require("../entity/weather-station-entity");
+const reading_entity_1 = require("../entity/reading-entity");
 const environmentConfiguration = new environment_configuration_1.EnvironmentConfiguration();
 const appConfig = environmentConfiguration.readAppConfiguration();
+const replaceWithPassword = (stringLink) => {
+    let dataString = stringLink;
+    dataString = dataString.replace("<password>", appConfig.getPassword());
+    return dataString;
+};
+exports.replaceWithPassword = replaceWithPassword;
 exports.AppDataSource = new typeorm_1.DataSource({
-    type: "mongodb",
+    // type: "mongodb",
+    type: "mysql",
     host: appConfig.getHost(),
     port: appConfig.getDataBasePort(),
     username: appConfig.getUserName(),
     password: appConfig.getPassword(),
     database: appConfig.getDataBase(),
-    synchronize: false,
+    // url: replaceWithPassword(appConfig.getUrl()),
+    synchronize: true,
     entities: [
-    // someEntity
+        country_entity_1.CountryEntity,
+        district_entity_1.DistrictEntity,
+        weather_station_entity_1.WeatherStationEntity,
+        reading_entity_1.ReadingEntity
     ],
     logging: false,
     subscribers: [
@@ -54,19 +69,3 @@ const ConnectToDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.ConnectToDatabase = ConnectToDatabase;
-const ConnectToTestDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const connection = yield exports.AppDataSource.initialize();
-        if (connection.isInitialized) {
-            console.log("Database connected !");
-        }
-        else {
-            console.log("Database Not connected !");
-        }
-    }
-    catch (error) {
-        console.log(error);
-        console.log("Database connection Failed !");
-    }
-});
-exports.ConnectToTestDatabase = ConnectToTestDatabase;

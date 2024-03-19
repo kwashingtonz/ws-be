@@ -44,8 +44,11 @@ class AppConfigurationsDto {
     setDataBasePort(dataBasePort) {
         this.dataBasePort = dataBasePort;
     }
-    getBeServicePath() {
-        return this.beServicePath;
+    getUrl() {
+        return this.url;
+    }
+    setUrl(url) {
+        this.url = url;
     }
     getJwtSecret() {
         return this.jwtSecret;
@@ -58,9 +61,6 @@ class AppConfigurationsDto {
     }
     setApiKey(apiKey) {
         this.apiKey = apiKey;
-    }
-    setBeServicePath(beServicePath) {
-        this.beServicePath = beServicePath;
     }
     getRedisPort() {
         return this.redisPort;

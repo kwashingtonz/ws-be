@@ -9,25 +9,22 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SystemServiceImpl = void 0;
-const Utility_1 = require("../../../common/class/Utility");
-/**
- * this class for identify system is running or not
- */
-class SystemServiceImpl {
-    /**
-     * will return system is up or not
-     * @author
-     * @returns common response object
-     *
-     */
-    systemHealth() {
+exports.SetupDaoImpl = void 0;
+class SetupDaoImpl {
+    saveCountry(country, countryRepo) {
         return __awaiter(this, void 0, void 0, function* () {
-            // throw new ValidationException(CodesRes.validationError,"Id not")
-            // let a:any = {}
-            // a.i.i
-            return Utility_1.Utility.getSuccessResponse("System is up and running", '200');
+            return countryRepo.save(country);
+        });
+    }
+    saveDistrict(district, districtRepo) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return districtRepo.save(district);
+        });
+    }
+    saveWeatherStation(weatherStation, wsRepo) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return wsRepo.save(weatherStation);
         });
     }
 }
-exports.SystemServiceImpl = SystemServiceImpl;
+exports.SetupDaoImpl = SetupDaoImpl;

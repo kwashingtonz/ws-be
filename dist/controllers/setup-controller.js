@@ -9,25 +9,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SystemServiceImpl = void 0;
-const Utility_1 = require("../../../common/class/Utility");
-/**
- * this class for identify system is running or not
- */
-class SystemServiceImpl {
-    /**
-     * will return system is up or not
-     * @author
-     * @returns common response object
-     *
-     */
-    systemHealth() {
-        return __awaiter(this, void 0, void 0, function* () {
-            // throw new ValidationException(CodesRes.validationError,"Id not")
-            // let a:any = {}
-            // a.i.i
-            return Utility_1.Utility.getSuccessResponse("System is up and running", '200');
-        });
+const common_response_1 = require("../common/dto/common-response");
+const setup_service_impl_1 = require("../services/setup/impl/setup-service-impl");
+let setupService = new setup_service_impl_1.SetupServiceImpl();
+exports.initalSetup = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    let cr = new common_response_1.CommonResponse();
+    try {
+        cr = yield setupService.initialSetup();
+        res.send(cr);
     }
-}
-exports.SystemServiceImpl = SystemServiceImpl;
+    catch (error) {
+        cr.setStatus(false);
+        cr.setExtra(error);
+        next(error);
+    }
+});
