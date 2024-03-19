@@ -97,6 +97,7 @@ export class WeatherDataServiceImpl implements WeatherDataService {
                 let districtDto: DistrictDto = new DistrictDto();
                 districtDto.setDistrictId(district.id);
                 districtDto.setDistrictName(district.districtName);
+                districtDto.setDistrictCode(district.districtCode);
 
                 let weatherStations: WeatherStationEntity[] = await this.weatherDataDao.getWeatherStationsByCountryIdAndDistrictId(country.id, district.id);
                 let weatherStationDtos: WeatherStationDto[] = new Array();

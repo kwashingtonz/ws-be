@@ -28,31 +28,31 @@ export class SetupServiceImpl implements SetupService {
         let savedCountry : CountryEntity = await this.setupDao.saveCountry(country, countryRepo);
 
         const weatherStations = [
-            { id: 1, name: 'Colombo' },
-            { id: 2, name: 'Gampaha' },
-            { id: 3, name: 'Kalutara' },
-            { id: 4, name: 'Kandy' },
-            { id: 5, name: 'Matale' },
-            { id: 6, name: 'Nuwara Eliya' },
-            { id: 7, name: 'Galle' },
-            { id: 8, name: 'Matara' },
-            { id: 9, name: 'Hambantota' },
-            { id: 10, name: 'Jaffna' },
-            { id: 11, name: 'Kilinochchi' },
-            { id: 12, name: 'Mannar' },
-            { id: 13, name: 'Vavuniya' },
-            { id: 14, name: 'Mullaitivu' },
-            { id: 15, name: 'Batticaloa' },
-            { id: 16, name: 'Ampara' },
-            { id: 17, name: 'Trincomalee' },
-            { id: 18, name: 'Kurunegala' },
-            { id: 19, name: 'Puttalam' },
-            { id: 20, name: 'Anuradhapura' },
-            { id: 21, name: 'Polonnaruwa' },
-            { id: 22, name: 'Badulla' },
-            { id: 23, name: 'Monaragala' },
-            { id: 24, name: 'Ratnapura' },
-            { id: 25, name: 'Kegalle' }
+            { id: 1, name: 'Colombo', code: 'lk-co' },
+            { id: 2, name: 'Gampaha', code: 'lk-gq'},
+            { id: 3, name: 'Kalutara', code: 'lk-kt' },
+            { id: 4, name: 'Kandy', code: 'lk-ky' },
+            { id: 5, name: 'Matale', code: 'lk-mt' },
+            { id: 6, name: 'Nuwara Eliya', code: 'lk-nw' },
+            { id: 7, name: 'Galle', code: 'lk-gl' },
+            { id: 8, name: 'Matara', code: 'lk-mh' },
+            { id: 9, name: 'Hambantota', code: 'lk-hb' },
+            { id: 10, name: 'Jaffna', code: 'lk-ja' },
+            { id: 11, name: 'Kilinochchi', code: 'lk-kl' },
+            { id: 12, name: 'Mannar', code: 'lk-mb' },
+            { id: 13, name: 'Vavuniya', code: 'lk-va' },
+            { id: 14, name: 'Mullaitivu', code: 'lk-mp' },
+            { id: 15, name: 'Batticaloa', code: 'lk-bc' },
+            { id: 16, name: 'Ampara', code: 'lk-ap' },
+            { id: 17, name: 'Trincomalee', code: 'lk-tc' },
+            { id: 18, name: 'Kurunegala', code: 'lk-kg' },
+            { id: 19, name: 'Puttalam', code: 'lk-px' },
+            { id: 20, name: 'Anuradhapura', code: 'lk-ad' },
+            { id: 21, name: 'Polonnaruwa', code: 'lk-pr' },
+            { id: 22, name: 'Badulla', code: 'lk-bd' },
+            { id: 23, name: 'Monaragala', code: 'lk-mj' },
+            { id: 24, name: 'Ratnapura', code: 'lk-rn' },
+            { id: 25, name: 'Kegalle', code: 'lk-ke' }
           ];
 
           for (const weatherStation of weatherStations) {
@@ -61,6 +61,7 @@ export class SetupServiceImpl implements SetupService {
             district.id = weatherStation.id;
             district.districtName = weatherStation.name;
             district.country = savedCountry;
+            district.districtCode = weatherStation.code;
 
             let savedDistrict : DistrictEntity = await this.setupDao.saveDistrict(district, districtRepo);
 

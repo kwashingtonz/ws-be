@@ -4,6 +4,7 @@ export class DistrictDto {
 
     private districtId: number;
     private districtName: string;
+    private districtCode: string;
     private weatherStations: WeatherStationDto[];
 
     public getDistrictId(): number {
@@ -20,6 +21,14 @@ export class DistrictDto {
 
     public setDistrictName(districtName: string): void {
         this.districtName = districtName;
+    }
+
+    public getDistrictCode(): string {
+        return this.districtCode;
+    }
+
+    public setDistrictCode(districtCode: string): void {
+        this.districtCode = districtCode;
     }
 
     public getWeatherStations(): WeatherStationDto[] {

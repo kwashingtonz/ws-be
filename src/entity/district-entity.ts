@@ -10,6 +10,10 @@ export class DistrictEntity {
     @Column()
     districtName: string
 
+    @Column()
+    districtCode: string
+
     @ManyToOne(() => CountryEntity)
     country: CountryEntity
+
 }

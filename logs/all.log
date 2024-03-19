@@ -4875,3 +4875,17 @@
 [35m[39m
 2024-03-18 13:51:00:510 [35mhttp[39m: [35mPOST /service/weatherData/saveData 200 72 - 18.448 ms[39m
 [35m[39m
+2024-03-19 08:14:33:1433 [35mhttp[39m: [35mGET / 404 139 - 2.792 ms[39m
+[35m[39m
+2024-03-19 08:14:35:1435 [35mhttp[39m: [35mGET /api-docs/ 304 - - 5.446 ms[39m
+[35m[39m
+2024-03-19 08:14:35:1435 [35mhttp[39m: [35mGET /api-docs/swagger-ui-init.js 304 - - 0.716 ms[39m
+[35m[39m
+2024-03-19 08:14:35:1435 [35mhttp[39m: [35mGET /api-docs/swagger-ui-standalone-preset.js 304 - - 2.704 ms[39m
+[35m[39m
+2024-03-19 08:14:35:1435 [35mhttp[39m: [35mGET /api-docs/swagger-ui.css 304 - - 3.016 ms[39m
+[35m[39m
+2024-03-19 08:14:35:1435 [35mhttp[39m: [35mGET /api-docs/swagger-ui-bundle.js 304 - - 0.515 ms[39m
+[35m[39m
+2024-03-19 08:14:57:1457 [35mhttp[39m: [35mGET /service/weatherData/getWeatherData 200 6099 - 81.047 ms[39m
+[35m[39m
