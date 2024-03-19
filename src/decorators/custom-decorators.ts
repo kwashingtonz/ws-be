@@ -52,11 +52,16 @@ export function NodeApplication<T extends { new(...args: any[]): {} }>(construct
   
   //socketIO
   const httpServer = http.createServer(app);
-  const io = new SocketIOServer(httpServer);
+  const io = new SocketIOServer(httpServer,{
+    cors: {
+      origin: "http://localhost:3000",
+      methods: ["GET", "POST"]
+    }
+  });
   setSocketInstance(io);
   
   // start server
-  app.listen(port);
+  httpServer.listen(port);
   
   // call prototype method
   constructor.prototype.run(port);
