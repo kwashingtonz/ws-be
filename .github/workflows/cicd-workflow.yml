@@ -13,17 +13,17 @@ jobs:
       - name: Login to docker hub
         run: docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
       - name: Build docker image
-        run: docker build -t usr/weather-stat .
+        run: docker build -t kalinduwashington/weather-stat .
       - name: Publish docker image
-        run: docker push usr/weather-stat:latest
+        run: docker push kalinduwashington/weather-stat:latest
     
   deploy:
     needs: build
     runs-on: self-hosted
     steps:
       - name: Pull image from docker hub
-        run: docker pull user/weather-stat:latest
+        run: docker pull kalinduwashington/weather-stat:latest
       - name: Delete old container
         run: docker rm -f weather-stat.container
       - name: Run docker container
-        run: docker run -d -p 9090:9090 --name weather-stat.container user/weather-stat:latest
+        run: docker run -d -p 9090:9090 --name weather-stat.container kalinduwashington/weather-stat:latest
