@@ -5,8 +5,8 @@ on:
     branches: [main]
   
 jobs:
-  runs-on: [ubuntu-latest]
   build:
+    runs-on: [ubuntu-latest]
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
@@ -17,13 +17,13 @@ jobs:
       - name: Publish docker image
         run: docker push usr/weather-stat:latest
     
-deploy:
-  needs: build
-  runs-on: self-hosted
-  steps:
-    - name: Pull image from docker hub
-      run: docker pull user/weather-stat:latest
-    - name: Delete old container
-      run: docker rm -f weather-stat.container
-    - name: Run docker container
-      run: docker run -d -p 9090:9090 --name weather-stat.container user/weather-stat:latest
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Pull image from docker hub
+        run: docker pull user/weather-stat:latest
+      - name: Delete old container
+        run: docker rm -f weather-stat.container
+      - name: Run docker container
+        run: docker run -d -p 9090:9090 --name weather-stat.container user/weather-stat:latest
