@@ -4,10 +4,10 @@
       "ip": "127.0.0.1"
     },
     "db": {
-      "host": "127.0.0.1",
-      "userName": "root",
+      "host": "weather-stat.ctymyaykonxt.us-east-1.rds.amazonaws.com",
+      "userName": "admin",
       "password": "kaliya234",
-      "db": "webstat_be",
+      "db": "ws-db",
       "port": "3306",
       "url":"mongodb+srv://kalinduwashington2:<password>@clusterws.ozvu6bb.mongodb.net/ws-be?retryWrites=true&w=majority&appName=ClusterWS"
     },

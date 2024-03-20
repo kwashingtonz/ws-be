@@ -5,11 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start-dev": "nodemon --exec ts-node src/app.ts --NODE_ENV=dev",
-    "build": "npm install npx tsc"
+    "build": "npx tsc",
+    "start": "node dist/app.js --NODE_ENV=prod",
+    "build-start": "npm run build && npm run start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kwashingtonz/ws-generator.git"
+    "url": "git+https://github.com/kwashingtonz/ws-be.git"
   },
   "keywords": [
     "weather",
@@ -19,9 +21,8 @@
   "author": "Kalindu Washington",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kwashingtonz/ws-generator/issues"
+    "url": "https://github.com/kwashingtonz/ws-be/issues"
   },
-  "homepage": "https://github.com/kwashingtonz/ws-generator#readme",
   "dependencies": {
     "axios": "^1.6.7",
     "body-parser": "^1.20.2",
