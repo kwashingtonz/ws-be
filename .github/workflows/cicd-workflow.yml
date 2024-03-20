@@ -4,26 +4,26 @@ on:
   push:
     branches: [main]
   
-  jobs:
-    runs-on: [ubuntu-latest]
-    build:
-      steps:
-        - name: Checkout source
-          uses: actions/checkout@v3
-        - name: Login to docker hub
-          run: docker logign -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
-        - name: Build docker image
-          run: docker build -t usr/weather-stat .
-        - name: Publish docker image
-          run: docker push usr/weather-stat:latest
+jobs:
+  runs-on: [ubuntu-latest]
+  build:
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+      - name: Login to docker hub
+        run: docker logign -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
+      - name: Build docker image
+        run: docker build -t usr/weather-stat .
+      - name: Publish docker image
+        run: docker push usr/weather-stat:latest
     
-    deploy:
-      needs: build
-      runs-on: self-hosted
-      steps:
-        - name: Pull image from docker hub
-          run: docker pull user/weather-stat:latest
-        - name: Delete old container
-          run: docker rm -f weather-stat.container
-        - name: Run docker container
-          run: docker run -d -p 9090:9090 --name weather-stat.container user/weather-stat:latest
+deploy:
+  needs: build
+  runs-on: self-hosted
+  steps:
+    - name: Pull image from docker hub
+      run: docker pull user/weather-stat:latest
+    - name: Delete old container
+      run: docker rm -f weather-stat.container
+    - name: Run docker container
+      run: docker run -d -p 9090:9090 --name weather-stat.container user/weather-stat:latest
