@@ -5,4 +5,3 @@ RUN npm install
 COPY . .
 EXPOSE 9090
 CMD ["npm","run","build-start"]
-```
