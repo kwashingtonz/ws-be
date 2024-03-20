@@ -9,7 +9,7 @@
       "password": "kaliya234",
       "db": "ws-db",
       "port": "3306",
-      "url":"mongodb+srv://kalinduwashington2:<password>@clusterws.ozvu6bb.mongodb.net/ws-be?retryWrites=true&w=majority&appName=ClusterWS"
+      "url":"nourl"
     },
     "jwtSecret": "4658sfds@6798gs",
     "apiKey":"HC0#5ylVKHSdjn#GhRK@s",
