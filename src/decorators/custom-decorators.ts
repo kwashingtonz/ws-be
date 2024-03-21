@@ -51,10 +51,11 @@ export function NodeApplication<T extends { new(...args: any[]): {} }>(construct
   app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(openapiSpecification))
   
   //socketIO
+  const clientHost = appConfigurationDto.getClientHost();
   const httpServer = http.createServer(app);
   const io = new SocketIOServer(httpServer,{
     cors: {
-      origin: "http://localhost:3000",
+      origin: clientHost,
       methods: ["GET", "POST"]
     }
   });

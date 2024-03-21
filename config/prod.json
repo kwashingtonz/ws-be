@@ -16,5 +16,8 @@
     "redis": {
       "host": "clustercfg.redis.a2kngi.memorydb.us-east-1.amazonaws.com",
       "port": "6379"
+    },
+    "client": {
+      "host": "https://weatherstat.live"
     }
 }

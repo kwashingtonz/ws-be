@@ -15,6 +15,8 @@ export class AppConfigurationsDto {
   private redisPort:number;
   private redisHost:string;
 
+  private clientHost: string;
+
   public getPort(): number {
       return this.port;
   }
@@ -109,6 +111,14 @@ export class AppConfigurationsDto {
   
   public setRedisHost(redisHost: string): void {
       this.redisHost = redisHost;
+  }
+
+  public getClientHost(): string {
+    return this.clientHost;
+  }
+  
+  public setClientHost(clientHost: string): void {
+      this.clientHost = clientHost;
   }
 
 }

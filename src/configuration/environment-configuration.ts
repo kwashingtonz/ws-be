@@ -24,6 +24,8 @@ export class EnvironmentConfiguration {
     appConfig.setRedisPort(redisPort || config.get("redis.port"));
     appConfig.setRedisHost(process.env.redisHost || config.get("redis.host"));
 
+    appConfig.setClientHost(process.env.clientHost || config.get("client.host"));
+
     return appConfig;
   }
 }
